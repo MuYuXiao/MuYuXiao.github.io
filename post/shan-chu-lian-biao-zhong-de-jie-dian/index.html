@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1613594469633">
+<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1613595501793">
 <link rel="stylesheet" href="https://MuYuXiao.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@ Solution：无法获取上一个节点，用下一个节点覆盖
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://MuYuXiao.github.io">
-        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1613594469633" class="site-logo">
+        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1613595501793" class="site-logo">
         <h1 class="site-title">慕语潇</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -124,7 +124,7 @@ class Solution:
         </div>
       </div>
     </div>
-
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
@@ -149,12 +149,26 @@ var app = new Vue({
 
 
 
+    <div id="comment"></div>
+<span id="comment-count"></span>
  <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'LOkyTTXRcfV9rMR9J0YT6L31-gzGzoHsz',
-            appKey: '7DH3QWIgOOs8Sy2XqqEXQHTN'
-        })    
+        <script>
+    comment_el = '#comment';
+    comment_count_el = 'span.comment-count';
+    new Valine({
+        el: comment_el,				// 评论区元素（要求div）
+        count_el: comment_count_el,    // 评论计数元素（要求span）
+        lang: 'zh-cn',							   // 语言（zh-cn或en）
+        emoticon_url: 'https://cloud.panjunwen.com/alu', // 表情包根目录（自行解决文件托管）
+        emoticon_list: ["吐.png", "狂汗.png", "不说话.png"], // 表情包文件列表
+        appId: 'LOkyTTXRcfV9rMR9J0YT6L31-gzGzoHsz',
+            appKey: '7DH3QWIgOOs8Sy2XqqEXQHTN',    										      
+        placeholder: 'Write a comment',  // 提示符
+        admin_email_hash: '', // 可选，管理员邮箱md5，用于显示管理员标志👮‍
+        max_nest: 3,					// 嵌套评论深度，太大会影响加载速度
+        page_size: 5					// 分页大小
+    });
+</script>
+
   </body>
 </html>
