@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>二叉树性质 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,13 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="性质1:二叉树的第k层，最多有2的k-1次个结点
+性质2:深度为m的二叉树，最多有2ᴹ-1个结点
+性质3:在二叉树中，叶子结点总是比度为2的结点多一个
+Prove：
+设度为2的节点有M个，度为1的节点有N个，度为0的节点有L个。
+则有：#关..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -82,10 +88,43 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">二叉树性质</h2>
+            <div class="post-date">2021-02-18</div>
             
+            <div class="post-content" v-pre>
+              <p>性质1:二叉树的第k层，最多有2的k-1次个结点<br>
+性质2:深度为m的二叉树，最多有2ᴹ-1个结点<br>
+性质3:在二叉树中，叶子结点总是比度为2的结点多一个<br>
+Prove：<br>
+设度为2的节点有M个，度为1的节点有N个，度为0的节点有L个。<br>
+则有：#关系1：<br>
+总结点数=M+N+L<br>
+度为2的结点产生2个结点，度为1的结点产生一个结点，根结点不由父节点产生<br>
+则有：#关系2：<br>
+总结点数=2<em>M+1</em>N+0<em>L+1<br>
+则有:总结点数=M+N+L=2</em>M+1<em>N+0</em>L+1<br>
+L=M+1<br>
+Q.E.D<br>
+性质4:二叉树中有n个结点，则二叉树的深度至少为[log₂n]+1</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://MuYuXiao.github.io/post/er-cha-shu-de-bian-li/">
+                  <h3 class="post-title">
+                    二叉树的遍历
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

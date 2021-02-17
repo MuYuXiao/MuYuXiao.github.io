@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>Flyme系统xposed通病临时解决办法 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,10 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="确认root权限有效后，请使用Root Explorer这类文件管理应用。
+赋予Root Explorer应用Root权限
+进入以下目录/data/user_de/0找到一个名字为de.robv.android.xposed.install..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -82,10 +85,37 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">Flyme系统xposed通病临时解决办法</h2>
+            <div class="post-date">2021-02-18</div>
             
+            <div class="post-content" v-pre>
+              <p>确认root权限有效后，请使用Root Explorer这类文件管理应用。</p>
+<p>赋予Root Explorer应用Root权限</p>
+<p>进入以下目录/data/user_de/0找到一个名字为de.robv.android.xposed.installer的文件夹，选中它，在右上角的按钮里点击权限设定，输入八进制0777，点击确定。</p>
+<p>进入文件夹，新建一个文件夹conf，进入后新建文件moudules.list，更改权限0711。</p>
+<p>回到Xposed Installer，勾选你要的插件</p>
+<p>打开Root Explorer，把conf文件夹的权限改成0755，更改所有者为与de.robv.android.xposed.installer一样，用户组也一样，勾选应用到子文件夹和文件</p>
+<p>重启你的设备<br>
+只能临时解决，重启后文件会消失</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://MuYuXiao.github.io/post/rom-mo-ren-kai-qi-usb-diao-shi-ke-adb-cao-kong-yong/">
+                  <h3 class="post-title">
+                    Rom默认开启USB调试（可adb操控用）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

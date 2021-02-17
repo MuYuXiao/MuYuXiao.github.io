@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>MC开服教程 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,15 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="开服教程（Linux）
+
+
+先安装java
+
+
+去https://yivesmirror.com/downloads/paper下载forge版jar，版本自己选就好。
+便携命令wget http://tcpr.ca/files/mcpc/..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -82,10 +90,75 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">MC开服教程</h2>
+            <div class="post-date">2021-02-18</div>
             
+            <div class="post-content" v-pre>
+              <h2 id="开服教程linux">开服教程（Linux）</h2>
+<ol>
+<li>
+<p>先安装java</p>
+</li>
+<li>
+<p>去<a href="https://yivesmirror.com/downloads/paper">https://yivesmirror.com/downloads/paper</a>下载forge版jar，版本自己选就好。</p>
+<p>便携命令wget http://tcpr.ca/files/mcpc/mcpc-plus-1.12.2-R2.1-forge965-B243.jar</p>
+</li>
+<li>
+<p>编写start.sh</p>
+<p>java -Xms256m Xmx1024m -jar 1.14.jar nogui<br>
+java -Xms最小内存 Xmx最大内存 -jar 下载的文件 nogui[是否开启gui]</p>
+</li>
+<li>
+<p>试运行bash start.sh生成一系列文件</p>
+</li>
+<li>
+<p>修改eula.txt  把false改为true</p>
+</li>
+<li>
+<p>配置文件为severs.properties，online-mode为正版验证</p>
+</li>
+</ol>
+<hr>
+<p><strong>补充：</strong></p>
+<ol>
+<li>
+<p>op权限最高为4，op 用户名 即可给予权限</p>
+</li>
+<li>
+<p>mod放在mods文件夹即可</p>
+</li>
+<li>
+<p>备份地图即备份world文件夹即可</p>
+</li>
+<li>
+<p>纯净服去下正常jar运行即可</p>
+</li>
+</ol>
+<hr>
+<p><strong>服务器注意事项</strong></p>
+<ol>
+<li>离开终端后停止运行用screen即可解决</li>
+<li>停止运行输入stop，不要直接关闭，否则会丢失数据</li>
+</ol>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://MuYuXiao.github.io/post/vmware15-ji-huo-mi-yao/">
+                  <h3 class="post-title">
+                    Vmware15激活密钥
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>
