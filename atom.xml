@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://MuYuXiao.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-02-17T19:38:20.389Z</updated>
+    <title>慕语潇</title>
+    <updated>2021-02-17T19:51:58.032Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://MuYuXiao.github.io"/>
     <link rel="self" href="https://MuYuXiao.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>叹人间 一曲风流唯少年</subtitle>
     <logo>https://MuYuXiao.github.io/images/avatar.png</logo>
     <icon>https://MuYuXiao.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, 慕语潇</rights>
     <entry>
         <title type="html"><![CDATA[二叉树性质]]></title>
         <id>https://MuYuXiao.github.io/post/er-cha-shu-xing-zhi/</id>
