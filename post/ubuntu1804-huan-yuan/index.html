@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1613597072650">
+<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1613597188933">
 <link rel="stylesheet" href="https://MuYuXiao.github.io/styles/main.css">
 
 
@@ -23,7 +23,8 @@ sudo su
 编辑源文件
 vi /etc/apt/sources.list#gedit打开也可
 
-源:#阿里云源 deb http://mirrors.aliyun.com/ubuntu/ bionic main..." />
+源:#阿里云源
+deb http://mirrors.aliyun.com/ubuntu/ bionic main..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -33,7 +34,7 @@ vi /etc/apt/sources.list#gedit打开也可
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://MuYuXiao.github.io">
-        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1613597072650" class="site-logo">
+        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1613597188933" class="site-logo">
         <h1 class="site-title">慕语潇</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -100,7 +101,39 @@ THEME MADE BY ERYOUHAO POWER BY GRIDEA | <a class="rss" href="https://MuYuXiao.g
 <p>编辑源文件</p>
 <pre><code>vi /etc/apt/sources.list#gedit打开也可
 </code></pre>
-<p>源:<code>#阿里云源 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse #清华源 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse #中科大源 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</code><br>
+<p>源:#阿里云源<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse<br>
+#清华源<br>
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+#中科大源<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse<br>
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse`<br>
 更新源命令:<br>
 apt update<br>
 apt upgrade</p>
