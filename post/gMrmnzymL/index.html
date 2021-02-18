@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 慕语潇</title>
+<title>python模拟浏览其操作 | 慕语潇</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -17,14 +17,11 @@
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="起因：蓝皮君大大的镜头提纯太多，不想一个一个去点就写了这个python脚本
+前置工作：
 
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+Anaconda3安装：清华源的Anaconda百度即可
+chromedriver下载  ：这里提供Chrome版的下载链接：http://chrom..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -91,20 +88,57 @@ THEME MADE BY ERYOUHAO POWER BY GRIDEA | <a class="rss" href="https://MuYuXiao.g
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">python模拟浏览其操作</h2>
+            <div class="post-date">2021-02-18</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+              <p>起因：蓝皮君大大的镜头提纯太多，不想一个一个去点就写了这个python脚本</p>
+<h2 id="前置工作">前置工作：</h2>
+<ul>
+<li>Anaconda3安装：清华源的Anaconda百度即可</li>
+<li>chromedriver下载  ：这里提供Chrome版的下载链接：<a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a><br>
+ 各大浏览器可参考：<a href="https://docs.seleniumhq.org/download/">https://docs.seleniumhq.org/download/</a><br>
+下载好后放到Anaconda安装目录即可</li>
+<li>安装seleium<br>
+ pip install seleium   ps:推荐将pip换为清华源</li>
+</ul>
+<h2 id="脚本编写">脚本编写：</h2>
+<ol>
+<li>获取百度云链接与提取码：哔哩哔哩个人投稿页id为&quot;submit-video-list&quot;的div下&lt;ul class=&quot;list-list&quot;&gt;含有带简介的视频信息。</li>
+<li>url清洗：个人是将清洗为 下载链接+提取码 的csv格式</li>
+<li>编写脚本：</li>
+</ol>
+<pre><code> from selenium import webdriver 
+ import time
+ import os
+ f = open(&quot;urls.csv&quot;, &quot;r&quot;)
+ lines = f.readlines()
+ for line in lines:
+     driver = webdriver.Chrome()
+     url_list = line.split(&quot;,,&quot;)
+     url = url_list[0]
+     captch = url_list[1]
+     driver.get(url)
+     input_box = driver.find_element_by_id('accessCode')
+     input_box.send_keys(captch+&quot;\n&quot;)
+     time.sleep(3)
+     download_button = driver.find_element_by_xpath(&quot;//*[@id='layoutMain']/div[1]/div[1]/div/div[2]/div/div/div[2]/a[2]&quot;)
+     download_button.click()
+     time.sleep(3)
+     driver.close()
+     ```</code></pre>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://MuYuXiao.github.io/post/ur0xjqTyD/">
+                  <h3 class="post-title">
+                    论文查重网站
+                  </h3>
+                </a>
+              </div>
             
 
             
