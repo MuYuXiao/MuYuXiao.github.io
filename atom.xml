@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://MuYuXiao.github.io</id>
     <title>慕语潇</title>
-    <updated>2021-02-18T10:36:54.395Z</updated>
+    <updated>2021-02-18T10:38:48.636Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://MuYuXiao.github.io"/>
     <link rel="self" href="https://MuYuXiao.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://MuYuXiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 慕语潇</rights>
     <entry>
-        <title type="html"><![CDATA[python模拟浏览其操作]]></title>
+        <title type="html"><![CDATA[python模拟浏览其操作实现批量下载百度云链接]]></title>
         <id>https://MuYuXiao.github.io/post/gMrmnzymL/</id>
         <link href="https://MuYuXiao.github.io/post/gMrmnzymL/">
         </link>
