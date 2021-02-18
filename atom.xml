@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://MuYuXiao.github.io</id>
     <title>慕语潇</title>
-    <updated>2021-02-18T10:42:17.361Z</updated>
+    <updated>2021-02-18T11:41:19.709Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://MuYuXiao.github.io"/>
     <link rel="self" href="https://MuYuXiao.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://MuYuXiao.github.io/images/avatar.png</logo>
     <icon>https://MuYuXiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 慕语潇</rights>
+    <entry>
+        <title type="html"><![CDATA[Eratosthenes筛法]]></title>
+        <id>https://MuYuXiao.github.io/post/Xlidj8HAW/</id>
+        <link href="https://MuYuXiao.github.io/post/Xlidj8HAW/">
+        </link>
+        <updated>2021-02-18T10:51:37.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[python模拟浏览其操作实现批量下载百度云链接]]></title>
         <id>https://MuYuXiao.github.io/post/gMrmnzymL/</id>
@@ -72,12 +79,5 @@
         <link href="https://MuYuXiao.github.io/post/curl-zi-xing-sheng-cheng-python-pei-zhi-wen-jian/">
         </link>
         <updated>2021-02-17T19:24:02.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Flyme系统xposed通病临时解决办法]]></title>
-        <id>https://MuYuXiao.github.io/post/flyme-xi-tong-xposed-tong-bing-lin-shi-jie-jue-ban-fa/</id>
-        <link href="https://MuYuXiao.github.io/post/flyme-xi-tong-xposed-tong-bing-lin-shi-jie-jue-ban-fa/">
-        </link>
-        <updated>2021-02-17T19:23:48.000Z</updated>
     </entry>
 </feed>

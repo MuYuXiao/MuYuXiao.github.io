@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Rom默认开启USB调试（可adb操控用） | 慕语潇</title>
+<title>Eratosthenes筛法 | 慕语潇</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -17,11 +17,15 @@
 
 
 
-    <meta name="description" content="对于非升级固件
-使用notepad++
-在system/bulid.prop中添加或修改
-persist.service.adb.enable=1
-" />
+    <meta name="description" content="描述：素数筛法，可以生成n以下的素数表
+英文wiki给出 伪码
+中文wiki给出 几重常见代码
+百度百科的也给出了几种代码，但个人感觉不太好
+算法说明
+
+生成到n的序列
+将第一个素数p（也就是2）的2倍，3倍，……，k倍做标记也就是筛去
+之..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -88,23 +92,48 @@ THEME MADE BY ERYOUHAO POWER BY GRIDEA | <a class="rss" href="https://MuYuXiao.g
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Rom默认开启USB调试（可adb操控用）</h2>
+            <h2 class="post-title">Eratosthenes筛法</h2>
             <div class="post-date">2021-02-18</div>
             
             <div class="post-content" v-pre>
-              <p>对于非升级固件<br>
-使用notepad++<br>
-在system/bulid.prop中添加或修改</p>
-<pre><code>persist.service.adb.enable=1</code></pre>
+              <p>描述：素数筛法，可以生成n以下的素数表<br>
+英文wiki给出 伪码<br>
+中文wiki给出 几重常见代码<br>
+百度百科的也给出了几种代码，但个人感觉不太好</p>
+<h3 id="算法说明">算法说明</h3>
+<ol>
+<li>生成到n的序列</li>
+<li>将第一个素数p（也就是2）的2倍，3倍，……，k倍做标记也就是筛去</li>
+<li>之后对下一个素数进行同样操作<br>
+<img src="https://MuYuXiao.github.io/post-images/1613648403235.gif" alt="" loading="lazy"></li>
+</ol>
+<h3 id="代码注output为从0到n的bool-list">代码（注：output为从0到n的bool list）</h3>
+<pre><code>def eratosthenes(n):
+    Isprime = [True] * (n+1)
+    Isprime[0] = False
+    Isprime[1] = False
+    for i in range(2,int(n ** 0.5)+1):
+        if Isprime[i]:
+            for j in range(i*i,n+1,i):
+                Isprime[j] = False
+    return Isprime
+</code></pre>
+<p>ps:</p>
+<ol>
+<li>Q：为什么从i*i开始循环？<br>
+  A：i*i 以下的合数已经素数前面筛过</li>
+<li>Q：为什么只需只循环到√n？<br>
+  A：√n到n之间的合数必然被小于√n的素数筛过（此处可用反证法做证明）</li>
+</ol>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://MuYuXiao.github.io/post/shan-chu-lian-biao-zhong-de-jie-dian/">
+                <a href="https://MuYuXiao.github.io/post/gMrmnzymL/">
                   <h3 class="post-title">
-                    删除链表中的节点
+                    python模拟浏览其操作实现批量下载百度云链接
                   </h3>
                 </a>
               </div>
