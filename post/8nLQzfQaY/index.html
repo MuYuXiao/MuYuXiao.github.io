@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1614928623822">
+<link rel="shortcut icon" href="https://MuYuXiao.github.io/favicon.ico?v=1614930088586">
 <link rel="stylesheet" href="https://MuYuXiao.github.io/styles/main.css">
 
 
@@ -23,10 +23,8 @@
 (图为无向图)
 
 
-
-假设指针在A处
-
-..." />
+通俗来说，深度优先即为一条路走到黑，然后再走下一条路，而广度优先则是先到下一个路口
+即深度优先每次到下一级..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -36,7 +34,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://MuYuXiao.github.io">
-        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1614928623822" class="site-logo">
+        <img src="https://MuYuXiao.github.io/images/avatar.png?v=1614930088586" class="site-logo">
         <h1 class="site-title">慕语潇</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -102,10 +100,88 @@ THEME MADE BY ERYOUHAO POWER BY GRIDEA | <a class="rss" href="https://MuYuXiao.g
 如上图我们把每一个元素作为一个点，称这个点为“<strong>节点</strong>”；有关的节点用线连起来，称这些线段“<strong>边</strong>”<br>
 (图为无向图)</p>
 </blockquote>
-<blockquote></blockquote>
 <blockquote>
-<p>假设指针在<strong>A</strong>处</p>
+<p>通俗来说，深度优先即为一条路走到黑，然后再走下一条路，而广度优先则是先到下一个路口<br>
+即深度优先每次到下一级，直至无子节点是再从最高级未搜索结点开始；广度优先则先探索下一级所有子 节点，之后在搜索下一级节点</p>
 </blockquote>
+<blockquote>
+<p>假设指针在<strong>A</strong>处开始搜索，对于广度优先来说搜索队列为<code>A B G F C I H E D</code><br>
+对于深度优先则是<code>A B C D I G H E F</code></p>
+</blockquote>
+<blockquote>
+<p>关于实现，简单来说就是构建一个搜索队列，将要搜索的节点输入队列里。搜索即可。</p>
+</blockquote>
+<blockquote>
+<p>代码展示(百度百科)</p>
+</blockquote>
+<pre><code>structNode
+{
+intx;
+inty;
+intstep;
+Node(intx1,inty1,intstep1):x(x1),y(y1),step(step1){}
+};
+intBFS()
+{
+Nodenode(0,0,0);
+queue&lt;Node&gt;q;
+while(!q.empty())q.pop();
+q.push(node);
+while(!q.empty())
+{
+node=q.front();
+q.pop();
+if(node.x==n-1&amp;&amp;node.y==n-1)
+{
+returnnode.step;
+}
+visit[node.x][node.y]=1;
+for(inti=0;i&lt;4;i++)
+{
+intx=node.x+stepArr[i][0];
+inty=node.y+stepArr[i][1];
+if(x&gt;=0&amp;&amp;y&gt;=0&amp;&amp;x&lt;n&amp;&amp;y&lt;n&amp;&amp;visit[x][y]==0&amp;&amp;mazeArr[x][y]==0)
+{
+visit[x][y]=1;
+Nodenext(x,y,node.step+1);
+q.push(next);
+}
+}
+}
+return-1;
+}
+#广度优先
+</code></pre>
+<pre><code>const int TREE_SIZE = 9; 
+std::stack&lt;node*&gt; visited, unvisited; 
+node nodes[TREE_SIZE]; 
+node* current; 
+for( int i=0; i&lt;TREE_SIZE; i++) //初始化树 
+    {    
+        nodes[i].self = i;   
+        int child = i*2+1;    
+        if( child&lt;TREE_SIZE ) //Left child       
+        nodes[i].left = &amp;nodes[child];    
+        else nodes[i].left = NULL;    
+        child++;    
+        if( child&lt;TREE_SIZE ) //Right child           
+        nodes[i].right = &amp;nodes[child];    
+        else       nodes[i].right = NULL;
+    }             
+unvisited.push(&amp;nodes[0]); //先把0放入UNVISITED stack  
+while(!unvisited.empty()) //只有UNVISITED不空  
+{    
+    current=(unvisited.top()); //当前应该访问的    
+    unvisited.pop();      
+    if(current-&gt;right!=NULL)     
+    unvisited.push(current-&gt;right); // 把右边压入 因为右边的访问次序是在左边之后 
+    if(current-&gt;left!=NULL)     
+    unvisited.push(current-&gt;left);     
+    visited.push(current);     
+    cout&lt;&lt;current-&gt;self&lt;&lt;endl; 
+    }
+#深度优先
+</code></pre>
 
             </div>
             
