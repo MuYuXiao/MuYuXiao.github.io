@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://MuYuXiao.github.io</id>
     <title>慕语潇</title>
-    <updated>2021-03-05T08:44:22.977Z</updated>
+    <updated>2021-03-14T12:41:20.492Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://MuYuXiao.github.io"/>
     <link rel="self" href="https://MuYuXiao.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://MuYuXiao.github.io/images/avatar.png</logo>
     <icon>https://MuYuXiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 慕语潇</rights>
+    <entry>
+        <title type="html"><![CDATA[关于"渣男""渣女"的一些看法]]></title>
+        <id>https://MuYuXiao.github.io/post/N4ZxAns9x/</id>
+        <link href="https://MuYuXiao.github.io/post/N4ZxAns9x/">
+        </link>
+        <updated>2021-03-14T12:05:12.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[广度优先搜索与深度优先搜索]]></title>
         <id>https://MuYuXiao.github.io/post/8nLQzfQaY/</id>
@@ -72,12 +79,5 @@
         <link href="https://MuYuXiao.github.io/post/ubuntu1804-huan-yuan/">
         </link>
         <updated>2021-02-17T19:28:11.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MC开服教程]]></title>
-        <id>https://MuYuXiao.github.io/post/mc-kai-fu-jiao-cheng/</id>
-        <link href="https://MuYuXiao.github.io/post/mc-kai-fu-jiao-cheng/">
-        </link>
-        <updated>2021-02-17T19:27:25.000Z</updated>
     </entry>
 </feed>
